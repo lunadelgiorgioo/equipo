@@ -18,8 +18,9 @@ export default class Equipo{
             console.log('no se ha podido añadir, intente nuevamente');
         }
     }
-    leerEquipo(array: Equipo[]){
+    leerEquipo():Equipo{
         console.log(Equipo);
+        return this;
     }
     eliminarEquipo(id: Equipo, array: Equipo[]): any{
         const encontrar = array.findIndex(id => id == id);
